@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e6f7ff; /* Eye-soothing light blue */
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #004d99; /* Deep blue */
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1em;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #0066cc; /* Lighter blue */
+}
+
+header {
+    padding: 40px;
+    text-align: center;
+    background-color: #cce7ff; /* Light blue */
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #004d99;
+}
+
+h2 {
+    padding: 20px;
+    text-align: center;
+    color: #004d99;
+}
+
+.slider-section {
+    margin-bottom: 40px;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 90%; /* 90% of screen width */
+    margin: 0 auto;
+}
+
+.grid-container {
+    display: flex;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    font-size: 1.1em;
+    cursor: pointer;
+    flex: 0 0 calc(33.333% - 15px); /* Equal width for 3 per row */
+    height: calc(33.333% - 15px); /* Make cards square */
+    margin-right: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button {
+    background-color: #004d99;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    font-size: 18px;
+}
+
+.nav-button:hover {
+    background-color: #0066cc;
+}
+
+.prev {
+    left: -50px;
+}
+
+.next {
+    right: -50px;
+}
+
