@@ -1,0 +1,162 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body {
+    background-color: #3d64e6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 600px;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Search Section */
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.search-wrapper button {
+    font-size: 1em;
+    background-color: #3d64e6;
+    color: #ffffff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-wrapper button:hover {
+    background-color: #2b4db6;
+}
+
+.search-wrapper input {
+    font-size: 1em;
+    padding: 0.5em;
+    border: none;
+    border-bottom: 2px solid #3d64e6;
+    outline: none;
+    color: #222a43;
+    transition: 0.3s;
+}
+
+.search-wrapper input:focus {
+    border-bottom: 2px solid #ff465a;
+}
+
+#result {
+    margin-top: 1.5em;
+}
+
+.container .flag-img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 1.5em auto;
+}
+
+.container h2 {
+    font-weight: 600;
+    color: #222a43;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.5em;
+}
+
+.data-wrapper {
+    margin-bottom: 1em;
+    letter-spacing: 0.3px;
+}
+
+.container h4 {
+    display: inline;
+    font-weight: 500;
+    color: #222a43;
+}
+
+.container span {
+    color: #5d6274;
+}
+
+.container h3 {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #ff465a;
+}
+
+/* Portfolio Section */
+.portfolio-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.portfolio-item-inner {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+}
+
+.portfolio-project .card {
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.portfolio-project .card:hover {
+    transform: translateY(-10px);
+}
+
+.project-title {
+    font-size: 1.5em;
+    color: #222a43;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 1.2em;
+    }
+
+    .portfolio-project .card {
+        padding: 15px;
+    }
+
+    .project-title {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-project .card {
+        padding: 10px;
+    }
+
+    .project-title {
+        font-size: 1em;
+    }
+}
